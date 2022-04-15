@@ -150,7 +150,7 @@ class Converter
     public function command()
     {
         $options = join(' ', $this->options);
-        $command = "{$this->executable} {$options} '{$this->source}' > '{$this->target}.{$this->extension}'";
+        $command = "{$this->executable} {$options} \"{$this->source}\" > \"{$this->target}.{$this->extension}\"";
         return $command;
     }
 
